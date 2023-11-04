@@ -305,6 +305,9 @@ hr {
     .word{
         display: none;
     }
+    .terminal-popup{
+        display: none;
+    }
 
 
 }
