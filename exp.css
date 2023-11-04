@@ -1,0 +1,167 @@
+body {
+    background: #313131;
+    color: white;
+    font-weight: 600;
+    font-size: 1.75rem; 
+    margin: 0;
+}
+
+.header {
+    background: #1f2128;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.header img, .himg {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 0.75rem; 
+}
+#arr, #bottom{
+    width: 1.5rem;
+}
+#close{
+    height: 1rem;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.contain{
+    display: flex;
+    gap: 1rem;
+}
+
+.explorer {
+    background: #22252a;
+    padding: 0.75rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.explorer, .explorer a, .prj-col p, a {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem; 
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.explorer a:hover {
+    color: dodgerblue;
+}
+
+.run {
+    padding-right: 1rem;
+    flex-shrink: 0;
+}
+
+.run #run {
+    width: 3rem;
+}
+
+
+hr {
+    margin: 0;
+    border: 0.025px solid #383a3f;
+}
+
+.prj-col {
+    width: 3.125rem; 
+    background: #22252a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem; 
+    position: relative;
+    z-index: 2;
+}
+
+.prj-col:hover, .dhead:hover, .folder-and-name:hover, .folder2:hover,  #run:hover, #bottom:hover, .folder3:hover{
+    background: #3e424a;
+    cursor: pointer;
+}
+
+.prj-col p {
+    margin: 0;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    position: relative;
+    bottom: 0.5rem; 
+}
+
+.prj-col img {
+    position: relative;
+    top: 1.25rem; 
+    padding-left: 0.938rem; 
+}
+
+.drawer {
+    width: 18.75rem; 
+    background: #1f2128;
+    position: absolute;
+    left: 3.125rem; 
+    z-index: 1;
+}
+
+
+.dhead{
+    height: 2.5rem;
+    background: #333843;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+.dhead #folder{
+    position: relative;
+    top: 0.45rem;
+    width: 2rem;
+    padding-left: 0.3rem;
+}
+.dhead #down-arrow{
+    width: 0.75rem;
+}
+
+.dropdown {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    padding-top: 2.5rem;
+}
+
+#right, #right2{
+    width: 0.7rem;
+    height: 1rem;
+}
+#down{
+    width: 0.7rem;
+}
+
+.dropdown #main{
+    width: 2rem;
+}
+.folder-and-name, .folder2, .folder3{
+    padding-top: 1rem;
+    padding-left: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.folder2{
+    padding-left: 2.5rem;
+}
+.folder3{
+    padding-left: 3.5rem;
+}
+#file{
+    height: 2.2rem;
+}
