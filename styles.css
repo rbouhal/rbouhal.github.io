@@ -2,7 +2,7 @@ body {
     background: #313131;
     color: white;
     font-weight: 600;
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
     margin: 0;
 }
 
@@ -14,16 +14,25 @@ body {
     text-align: left;
 }
 
-.header img, .himg {
+.header img,
+.himg {
     margin-left: 10px;
     margin-top: 10px;
     margin-right: 10px;
-    padding-bottom: 0.75rem; 
+    padding-bottom: 0.75rem;
+
 }
-#arr, #bottom{
+
+#name {
+    width: 3.125rem;
+}
+
+#arr,
+#bottom {
     width: 1.5rem;
 }
-#close{
+
+#close {
     height: 1rem;
 }
 
@@ -34,23 +43,26 @@ body {
     letter-spacing: 2px;
 }
 
-.contain{
+.contain {
     display: flex;
     gap: 1rem;
 }
 
 .explorer {
     background: #22252a;
-    padding: 0.75rem; 
+    padding: 0.75rem;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
 }
 
-.explorer, .explorer a, .prj-col p, a {
+.explorer,
+.explorer a,
+.prj-col p,
+a {
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1rem; 
+    font-size: 1rem;
     letter-spacing: 2px;
     text-decoration: none;
 }
@@ -75,17 +87,23 @@ hr {
 }
 
 .prj-col {
-    width: 3.125rem; 
+    width: 3.125rem;
     background: #22252a;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem; 
+    padding-top: 5rem;
     position: relative;
     z-index: 2;
 }
 
-.prj-col:hover, .dhead:hover, .folder-and-name:hover, .folder2:hover,  #run:hover, #bottom:hover, .folder3:hover{
+.prj-col:hover,
+.dhead:hover,
+.folder-and-name:hover,
+.folder2:hover,
+#run:hover,
+#bottom:hover,
+.folder3:hover {
     background: #3e424a;
     cursor: pointer;
 }
@@ -95,38 +113,40 @@ hr {
     transform: rotate(-90deg);
     white-space: nowrap;
     position: relative;
-    bottom: 0.5rem; 
+    bottom: 0.5rem;
 }
 
 .prj-col img {
     position: relative;
-    top: 1.25rem; 
-    padding-left: 0.938rem; 
+    top: 1.25rem;
+    padding-left: 0.938rem;
 }
 
 .drawer {
-    width: 18.75rem; 
+    width: 18.75rem;
     background: #1f2128;
     position: absolute;
-    left: 3.125rem; 
+    left: 3.125rem;
     z-index: 1;
 }
 
 
-.dhead{
+.dhead {
     height: 2.5rem;
     background: #333843;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
 }
-.dhead #folder{
+
+.dhead #folder {
     position: relative;
     top: 0.45rem;
     width: 2rem;
     padding-left: 0.3rem;
 }
-.dhead #down-arrow{
+
+.dhead #down-arrow {
     width: 0.75rem;
 }
 
@@ -137,18 +157,23 @@ hr {
     padding-top: 2.5rem;
 }
 
-#right, #right2{
+#right,
+#right2 {
     width: 0.7rem;
     height: 1rem;
 }
-#down{
+
+#down {
     width: 0.7rem;
 }
 
-.dropdown #main{
+.dropdown #main {
     width: 2rem;
 }
-.folder-and-name, .folder2, .folder3{
+
+.folder-and-name,
+.folder2,
+.folder3 {
     padding-top: 1rem;
     padding-left: 0.7rem;
     display: flex;
@@ -156,13 +181,15 @@ hr {
     align-items: center;
 }
 
-.folder2{
+.folder2 {
     padding-left: 2.5rem;
 }
-.folder3{
+
+.folder3 {
     padding-left: 3.5rem;
 }
-#file{
+
+#file {
     height: 2.2rem;
 }
 
@@ -172,18 +199,38 @@ hr {
     font-weight: 200;
     font-size: 18px;
     padding: 20px;
-    white-space: pre; /* Preserve whitespace in code */
-    overflow-x: auto; /* Enable horizontal scrolling if code is too long */
+    white-space: pre;
+    /* Preserve whitespace in code */
+    overflow-x: auto;
+    /* Enable horizontal scrolling if code is too long */
 
 }
-.keyword { color: #c678dd; }
-.string { color: #98c379; }
-.comment { color: #999c9f; }
-.method { color: #61afef; }
-.annotation { color: #56b6c2; }
-.number { color: #d19a66; }
 
-.aboutme{
+.keyword {
+    color: #c678dd;
+}
+
+.string {
+    color: #98c379;
+}
+
+.comment {
+    color: #999c9f;
+}
+
+.method {
+    color: #61afef;
+}
+
+.annotation {
+    color: #56b6c2;
+}
+
+.number {
+    color: #d19a66;
+}
+
+.aboutme {
     position: absolute;
     top: 7rem;
     left: 17rem;
@@ -196,11 +243,14 @@ hr {
     font-family: 'IMB Plex Mono', monospace;
     font-weight: 300;
     font-size: 20px;
-    position: fixed; /* Fixed positioning to keep it at the bottom */
-    bottom: -100%; /* Initially hidden off the screen */
+    position: fixed;
+    /* Fixed positioning to keep it at the bottom */
+    bottom: -100%;
+    /* Initially hidden off the screen */
     left: 0;
     width: 100%;
-    transition: bottom 0.5s; /* Smooth transition for the slide effect */
+    transition: bottom 0.5s;
+    /* Smooth transition for the slide effect */
     z-index: 5;
 }
 
@@ -219,6 +269,34 @@ hr {
 
 
 @media screen and (max-width: 700px) {
-    
-  }
+    body {
+        font-size: 14px;
+    }
 
+    .header{
+        width: 100vw;
+    }
+
+    .header img,
+    .himg {
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-right: 5px;
+        padding-bottom: 0.25rem;
+    }
+
+    #name {
+        width: 2.125rem;
+    }
+
+    #arr,
+    #bottom {
+        width: .75rem;
+    }
+
+    #close {
+        height: 0.5rem;
+    }
+
+
+}
