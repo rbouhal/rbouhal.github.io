@@ -298,5 +298,12 @@ hr {
         height: 0.5rem;
     }
 
+    .explorer a{
+        font-size: 12px;
+    }
+    .word{
+        display: none;
+    }
+
 
 }
