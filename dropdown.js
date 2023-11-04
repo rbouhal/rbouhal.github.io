@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             // Smoothly move the .index class to the left when drawer is closed
             $(".aboutme").animate({
-                left: '7rem' // Adjust this value as per your design requirement
+                left: '1rem' // Adjust this value as per your design requirement
             });
 
         } else {
