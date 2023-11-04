@@ -269,7 +269,7 @@ hr {
         font-size: 16px;
     }
 
-    .header{
+    .header {
         width: 100vw;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -298,18 +298,25 @@ hr {
         height: 0.5rem;
     }
 
-    .explorer a{
+    .explorer a {
         font-size: 16px;
     }
-    .word{
+
+    .word {
         display: none;
     }
-    .terminal-popup{
+
+    .terminal-popup {
         display: none;
     }
-    .java-code{
+
+    .java-code {
         font-size: 14px;
-        width: 50vw;
+        transform: scale(50%);
+
+    }
+    .drawer, .prj-col{
+        display: none;
     }
 
 
