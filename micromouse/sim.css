@@ -1,7 +1,7 @@
 body {
-    font-family: Poppins;
-    font-weight: 400;
-    background-color: #e39e54;
+    font-weight: 200;
+    background: #1f2128;
+    font-family: "JetBrains Mono", monospace;
 }
 table {
     border-collapse: collapse; 
@@ -10,15 +10,16 @@ table {
     margin: auto;
 }
 table td {
-    border: 1px #000000 solid;
+    border: 1px #fff solid;
     height: 40px;
     width: 40px;
-    background: antiquewhite;
+    background: #1f2128;
 }
 
 h1 {
     font-size: calc(1em + 3vw);
     text-align: center;
+    color: #fff;
 }
 .button img {
     height: 25px;
@@ -29,15 +30,15 @@ h1 {
 .button {
     align-items: center;
     appearance: none;
-    background-color: #fcf5ed;
+    background-color: #e8e8e9;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e9c9a6 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #bbbcbe 0 -3px 0 inset;
     box-sizing: border-box;
     color: #000;
     cursor: pointer;
     display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
+  
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -60,12 +61,12 @@ h1 {
 
 
 .button:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e9c9a6 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #bbbcbe 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
 .button:active {
-    box-shadow: #e9c9a6 0 3px 7px inset;
+    box-shadow: #e8e8e9 0 3px 7px inset;
     transform: translateY(2px);
 }
 
