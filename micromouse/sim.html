@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation</title>
+    <link rel="stylesheet" type="text/css" href="sim.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Micromouse Maze Simulator
+    </h1>
+    <div id="maze_container"></div>
+    <script src="maze.js"></script>
+    <script>
+        // Ensuring the DOM is fully loaded before calling the function
+        document.addEventListener("DOMContentLoaded", function () {
+            createBlankMaze();
+        });
+    </script>
+    <div class="button-container">
+        <div class="button">
+            run <img src="icons/play-button.png" alt="">
+        </div>
+        <div id="newMazeButton" class="button">
+            new <img src="icons/refresh.png" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById("newMazeButton").addEventListener("click", function() {
+            // Clear the existing maze first
+            document.getElementById("maze_container").innerHTML = "";
+            // Then create a new maze
+            createBlankMaze();
+        });
+    </script>
+</body>
+
+</html
