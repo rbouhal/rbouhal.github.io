@@ -15,7 +15,15 @@ function createBlankMaze() {
 
             var col = document.createElement("td");
             if (rowIndex == mazeHeight && colIndex == mazeWidth) {
-                col.setAttribute("type", "start");
+                col.setAttribute("type", "start");col.style.display = "flex";
+                col.style.justifyContent = "center";
+                col.style.alignItems = "center";
+                var mouseIcon = document.createElement("img");
+                mouseIcon.setAttribute("src", "icons/mouse.png");
+                mouseIcon.style.width = "35px";
+                mouseIcon.style.height = "35px";
+                // Append the image to the cell
+                col.appendChild(mouseIcon);
 
             } else if (rowIndex == mazeHeight / 2 && colIndex == mazeWidth / 2) {
                 col.setAttribute("type", "finish");
