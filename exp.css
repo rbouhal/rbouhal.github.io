@@ -83,6 +83,7 @@ hr {
     padding-top: 5rem; 
     position: relative;
     z-index: 2;
+    height: 100vh;
 }
 
 .prj-col:hover, .dhead:hover, .folder-and-name:hover, .folder2:hover,  #run:hover, #bottom:hover, .folder3:hover{
@@ -110,6 +111,7 @@ hr {
     position: absolute;
     left: 3.125rem; 
     z-index: 1;
+    height: 100vh;
 }
 
 
