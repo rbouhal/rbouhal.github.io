@@ -194,22 +194,22 @@ function animateMouse(path) {
             let { x, y } = path[step];
             rotateMouse(x, y);
 
+            let mouseCell = document.getElementById(`cell-${y}-${x}`);
+            mouseCell.style.backgroundColor = '#404553'; // Color the path
+
             // Check if the next step is the finish position
             if (step === path.length - 1) {
-                let finishRow = Math.floor(mazeRows / 2);
-                let finishColumn = Math.floor(mazeColumns / 2);
-                let finishCell = document.getElementById(`cell-${finishRow}-${finishColumn}`);
+                let finishCell = document.getElementById(`cell-${y}-${x}`);
                 let mouse = document.getElementById("mouse");
                 finishCell.appendChild(mouse); // Move mouse to finish cell
+                finishCell.style.backgroundColor = '#404553'; // Color the finish cell
                 return; // Stop the animation
             }
 
-            let mouseCell = document.getElementById(`cell-${y}-${x}`);
-            mouseCell.style.backgroundColor = '#404553'; // Color the path
             let mouse = document.getElementById("mouse");
             mouseCell.appendChild(mouse);
             step++;
-            setTimeout(moveNext, 200); // Adjust timeout for animation speed
+            setTimeout(moveNext, 300); // Adjust timeout for animation speed
         }
     }
     moveNext();
