@@ -5,8 +5,6 @@ body {
 }
 table {
     border-collapse: collapse; 
-    border: 1px #000000 solid;
-
     margin: auto;
 }
 table td {
@@ -81,4 +79,17 @@ h1 {
     gap: 50px;
     margin: auto;
     /* Space between buttons */
+}
+
+.mouse-img {
+    transition: transform 0.2s ease; /* Smooth transition for rotation */
+}
+#mouse {
+    position: relative; /* Needed for z-index to work */
+    z-index: 1;
+}
+
+.finish-img {
+    position: relative; /* Needed for z-index to work */
+    z-index: 0;
 }

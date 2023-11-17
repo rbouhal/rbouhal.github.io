@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="micromouse/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="icon" type="image/png", href="icons/mouse.png">
+    <link rel="icon" type="image/png" , href="icons/mouse.png">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         });
     </script>
     <div class="button-container">
-        <div class="button">
+        <div id="runButton" class="button">
             run <img src="icons/play-button.png" alt="">
         </div>
         <div id="newMazeButton" class="button">
@@ -46,6 +46,10 @@
             document.getElementById("maze_container").innerHTML = "";
             // Then create a new maze
             createBlankMaze();
+        });
+
+        document.getElementById("runButton").addEventListener("click", function () {
+            startFloodFill();
         });
     </script>
 </body>
