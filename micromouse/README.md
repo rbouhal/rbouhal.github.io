@@ -1,1 +1,1 @@
-Website: https://rbouhalvt.github.io/micromouse-maze-simulator
+Website: https://rayanbouhal.com/micromouse/sim
