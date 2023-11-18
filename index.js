@@ -35,9 +35,9 @@ $(document).ready(function () {
         // Change the arrow image for rayan-bouhal-folder
         var $arrow = $("#rb-right");
         if ($arrow.attr("src").includes("right.png")) {
-            $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
+            $arrow.attr("src", "assets/down.png");
         } else {
-            $arrow.attr("src", "assets/right.png").css({ 'width': '0.7rem', 'height': '1rem' });
+            $arrow.attr("src", "assets/right.png");
         }
     });
 
@@ -48,9 +48,9 @@ $(document).ready(function () {
         // Change the arrow image for resume-folder
         var $arrow = $("#resume-right");
         if ($arrow.attr("src").includes("right.png")) {
-            $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
+            $arrow.attr("src", "assets/down.png");
         } else {
-            $arrow.attr("src", "assets/right.png").css({ 'width': '0.7rem', 'height': '1rem' });
+            $arrow.attr("src", "assets/right.png");
         }
     });
 
@@ -61,9 +61,9 @@ $(document).ready(function () {
         // Change the arrow image for resume-folder
         var $arrow = $("#research-right");
         if ($arrow.attr("src").includes("right.png")) {
-            $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
+            $arrow.attr("src", "assets/down.png");
         } else {
-            $arrow.attr("src", "assets/right.png").css({ 'width': '0.7rem', 'height': '1rem' });
+            $arrow.attr("src", "assets/right.png");
         }
     });
 
