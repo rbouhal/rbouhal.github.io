@@ -54,7 +54,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 1rem;
 }
+
 
 .explorer,
 .explorer a,
@@ -71,12 +73,7 @@ a {
     color: dodgerblue;
 }
 
-.run {
-    padding-right: 1rem;
-    flex-shrink: 0;
-}
-
-.run #run {
+#run {
     width: 3rem;
 }
 
@@ -87,7 +84,7 @@ hr {
 }
 
 .prj-col {
-    width: 3.125rem;
+    width: 3.25vw;
     background: #22252a;
     display: flex;
     flex-direction: column;
@@ -101,13 +98,14 @@ hr {
 .dhead:hover,
 .rayan-bouhal-folder:hover,
 .resume-folder:hover,
-#run:hover,
+.run:hover,
 #bottom:hover,
 .resume-level-2:hover,
 .research-folder:hover,
 .research-level-2:hover {
     background: #3e424a;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .prj-col p {
@@ -125,7 +123,7 @@ hr {
 }
 
 .drawer {
-    width: 18.75rem;
+    width: 16.625vw;
     background: #1f2128;
     position: absolute;
     left: 3.125rem;
@@ -320,9 +318,10 @@ hr {
         transform: scale(50%);
 
     }
-    .drawer, .prj-col{
-        display: none;
+    .drawer{
+        width: 25vw;
     }
+
 
 
 }
