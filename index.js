@@ -33,7 +33,7 @@ $(document).ready(function () {
         }
 
         // Change the arrow image for rayan-bouhal-folder
-        var $arrow = $("rb-right");
+        var $arrow = $("#rb-right");
         if ($arrow.attr("src").includes("right.png")) {
             $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
         } else {
