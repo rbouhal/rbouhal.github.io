@@ -217,6 +217,3 @@ function animateMouse(path) {
 
 
 
-
-
-
