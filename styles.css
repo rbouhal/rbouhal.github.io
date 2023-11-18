@@ -297,8 +297,23 @@ hr {
         height: 5px;
     }
 
-    #main {
-        height: 8px;
+    #main,
+    #file {
+        height: 10px;
+    }
+
+    .dropdown div {
+        font-size: 10px;
+    }
+
+    .resume-folder,
+    .research-folder {
+        padding-left: 3px;
+    }
+
+    .resume-level-2,
+    .research-level-2 {
+        padding-left: 10px;
     }
 
     .explorer a {
