@@ -81,15 +81,25 @@ h1 {
     /* Space between buttons */
 }
 
-.mouse-img {
-    transition: transform 0.2s ease; /* Smooth transition for rotation */
-}
-#mouse {
-    position: relative; /* Needed for z-index to work */
-    z-index: 1;
+.maze-cell {
+    position: relative; /* Position the container cell */
+    width: 40px; /* Example size, adjust as needed */
+    height: 40px; /* Example size, adjust as needed */
 }
 
 .finish-img {
-    position: relative; /* Needed for z-index to work */
+    position: absolute;
     z-index: 0;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+}
+
+.mouse-img {
+    transition: transform 0.2s ease;
+    position: absolute;
+    z-index: 3; /* Above the finish image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
