@@ -120,10 +120,11 @@ hr {
     position: relative;
     top: 1.25rem;
     padding-left: 0.938rem;
+    width: 30px;
 }
 
 .drawer {
-    width: 18.625vw;
+    width: 20.625vw;
     background: #1f2128;
     position: absolute;
     left: 3.25vw;
@@ -298,13 +299,21 @@ hr {
     }
 
     #main,
-    #file {
+    #file, #project-folder {
         height: 10px;
     }
 
-    .dropdown div {
+    .dropdown div, .prj-col p, .dhead {
         font-size: 10px;
     }
+  
+    .prj-col img, #project-down-arrow{
+        width: 10px
+    }
+    #project-folder{
+        scale: 69%;
+    }
+
 
     .resume-folder,
     .research-folder {
