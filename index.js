@@ -72,32 +72,33 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+    var isDrawerOpen = true; // Flag to track the state of the drawer
+
     $(".prj-col").click(function () {
-        // Check if drawer is already shown (left position is at roughly 50px)
-        if ($(".drawer").css('left') === '50px') {
-            // Drawer is shown, so animate to hide it
+        var prjColWidth = $(".prj-col").outerWidth(); // width in pixels
+        var drawerWidth = $(".drawer").outerWidth(); // drawer width in pixels
+
+        if (isDrawerOpen) { // Check if drawer is shown
             $(".drawer").animate({
-                left: "-250px" // or the width of your drawer in pixels
+                left: `-${drawerWidth}px` // Hide the drawer
             });
-
-            // Smoothly move the .index class to the left when drawer is closed
             $(".aboutme").animate({
-                left: '1rem' // Adjust this value as per your design requirement
+                left: '1rem' // Adjust the position of .aboutme
             });
-
+            isDrawerOpen = false; // Update the flag
         } else {
-            // Drawer is hidden, so animate to show it
             $(".drawer").animate({
-                left: "50px" // or the equivalent of 3.1rem in pixels
+                left: `${prjColWidth}px` // Show the drawer beside .prj-col
             });
-
-            // Smoothly move the .index class to the right when drawer is open
             $(".aboutme").animate({
-                left: '17rem' // This is your original value
+                left: '17rem' // Adjust the position of .aboutme
             });
+            isDrawerOpen = true; // Update the flag
         }
     });
 });
+
+
 
 
 $(document).ready(function () {

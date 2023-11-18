@@ -123,10 +123,10 @@ hr {
 }
 
 .drawer {
-    width: 16.625vw;
+    width: 18.625vw;
     background: #1f2128;
     position: absolute;
-    left: 3.125rem;
+    left: 3.25vw;
     z-index: 1;
 }
 
@@ -156,6 +156,7 @@ hr {
     font-size: 16px;
     padding-top: 2.5rem;
 }
+
 #right,
 #rb-right,
 #resume-right,
@@ -184,11 +185,13 @@ hr {
     align-items: center;
 }
 
-.resume-folder, .research-folder {
+.resume-folder,
+.research-folder {
     padding-left: 2.5rem;
 }
 
-.resume-level-2, .research-level-2 {
+.resume-level-2,
+.research-level-2 {
     padding-left: 3.5rem;
 }
 
@@ -272,37 +275,34 @@ hr {
         font-size: 16px;
     }
 
-    .header {
-        width: 100vw;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .header img,
-    .himg {
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-right: 5px;
-        padding-bottom: 0.25rem;
-    }
-
     #name {
-        width: 2.125rem;
+        width: 8%;
     }
 
     #arr,
     #bottom {
-        width: .75rem;
+        width: 4%;
     }
 
     #close {
-        height: 0.5rem;
+        height: 1.5%;
+        width: 3%;
+    }
+
+    #right,
+    #rb-right,
+    #resume-right,
+    #research-right {
+        width: 5px;
+        height: 5px;
+    }
+
+    #main {
+        height: 8px;
     }
 
     .explorer a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .word {
@@ -311,15 +311,6 @@ hr {
 
     .terminal-popup {
         display: none;
-    }
-
-    .java-code {
-        font-size: 14px;
-        transform: scale(50%);
-
-    }
-    .drawer{
-        width: 25vw;
     }
 
 
