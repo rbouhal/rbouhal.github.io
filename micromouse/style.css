@@ -122,3 +122,13 @@ h2 {
     gap: 20px;
     /* Space between buttons */
 }
+
+@media screen and (max-width: 700px) {
+    .content-box {
+        padding-left: 15px;
+        padding-top: 32px;
+        padding-right: 15px;
+        padding-bottom: 32px;
+        width: 75vw;
+    }
+}
