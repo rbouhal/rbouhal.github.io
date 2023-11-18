@@ -6,23 +6,34 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".folder-and-name").click(function () {
-        // Toggle the visibility of folder2
-        $(".folder2").toggle();
+    $(".rayan-bouhal-folder").click(function () {
+        // Toggle the visibility of resume-folder
+        $(".resume-folder").toggle();
+        $(".research-folder").toggle();
 
-        // Check the state of folder3 and act accordingly
-        if (!$(".folder2").is(":visible")) {
-            // If folder2 is now hidden, also hide folder3 and remember its state
-            $(".folder3").data('wasVisible', $(".folder3").is(":visible")).hide();
+        // Check the state of resume-level-2 and act accordingly
+        if (!$(".resume-folder").is(":visible")) {
+            // If resume-folder is now hidden, also hide resume-level-2 and remember its state
+            $(".resume-level-2").data('wasVisible', $(".resume-level-2").is(":visible")).hide();
         } else {
-            // If folder2 is now visible, restore the visibility of folder3 based on its remembered state
-            if ($(".folder3").data('wasVisible')) {
-                $(".folder3").show();
+            // If resume-folder is now visible, restore the visibility of resume-level-2 based on its remembered state
+            if ($(".resume-level-2").data('wasVisible')) {
+                $(".resume-level-2").show();
+            }
+        }
+        // Check the state of resume-level-2 and act accordingly
+        if (!$(".research-folder").is(":visible")) {
+            // If resume-folder is now hidden, also hide resume-level-2 and remember its state
+            $(".research-level-2").data('wasVisible', $(".research-level-2").is(":visible")).hide();
+        } else {
+            // If resume-folder is now visible, restore the visibility of resume-level-2 based on its remembered state
+            if ($(".research-level-2").data('wasVisible')) {
+                $(".research-level-2").show();
             }
         }
 
-        // Change the arrow image for folder-and-name
-        var $arrow = $("#right");
+        // Change the arrow image for rayan-bouhal-folder
+        var $arrow = $("rb-right");
         if ($arrow.attr("src").includes("right.png")) {
             $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
         } else {
@@ -30,18 +41,33 @@ $(document).ready(function () {
         }
     });
 
-    $(".folder2").click(function () {
-        // Toggle the visibility of folder3
-        $(".folder3").toggle();
+    $(".resume-folder").click(function () {
+        // Toggle the visibility of resume-level-2
+        $(".resume-level-2").toggle();
 
-        // Change the arrow image for folder2
-        var $arrow = $("#right2");
+        // Change the arrow image for resume-folder
+        var $arrow = $("#resume-right");
         if ($arrow.attr("src").includes("right.png")) {
             $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
         } else {
             $arrow.attr("src", "assets/right.png").css({ 'width': '0.7rem', 'height': '1rem' });
         }
     });
+
+    $(".research-folder").click(function () {
+        // Toggle the visibility of resume-level-2
+        $(".research-level-2").toggle();
+
+        // Change the arrow image for resume-folder
+        var $arrow = $("#research-right");
+        if ($arrow.attr("src").includes("right.png")) {
+            $arrow.attr("src", "assets/down.png").css({ 'width': '1rem', 'height': '0.7rem' });
+        } else {
+            $arrow.attr("src", "assets/right.png").css({ 'width': '0.7rem', 'height': '1rem' });
+        }
+    });
+
+
 });
 
 
