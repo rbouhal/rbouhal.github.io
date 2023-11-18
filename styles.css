@@ -99,11 +99,13 @@ hr {
 
 .prj-col:hover,
 .dhead:hover,
-.folder-and-name:hover,
-.folder2:hover,
+.rayan-bouhal-folder:hover,
+.resume-folder:hover,
 #run:hover,
 #bottom:hover,
-.folder3:hover {
+.resume-level-2:hover,
+.research-folder:hover,
+.research-level-2:hover {
     background: #3e424a;
     cursor: pointer;
 }
@@ -139,14 +141,14 @@ hr {
     font-size: 16px;
 }
 
-.dhead #folder {
+.dhead #project-folder {
     position: relative;
     top: 0.45rem;
     width: 2rem;
     padding-left: 0.3rem;
 }
 
-.dhead #down-arrow {
+.dhead #project-down-arrow {
     width: 0.75rem;
 }
 
@@ -156,9 +158,10 @@ hr {
     font-size: 16px;
     padding-top: 2.5rem;
 }
-
 #right,
-#right2 {
+#rb-right,
+#resume-right,
+#research-right {
     width: 0.7rem;
     height: 1rem;
 }
@@ -171,9 +174,11 @@ hr {
     width: 2rem;
 }
 
-.folder-and-name,
-.folder2,
-.folder3 {
+.rayan-bouhal-folder,
+.resume-folder,
+.resume-level-2,
+.research-folder,
+.research-level-2 {
     padding-top: 1rem;
     padding-left: 0.7rem;
     display: flex;
@@ -181,11 +186,11 @@ hr {
     align-items: center;
 }
 
-.folder2 {
+.resume-folder, .research-folder {
     padding-left: 2.5rem;
 }
 
-.folder3 {
+.resume-level-2, .research-level-2 {
     padding-left: 3.5rem;
 }
 
