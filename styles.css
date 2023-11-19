@@ -286,7 +286,8 @@ hr {
 
     .prj-col,
     .drawer,
-    .aboutme {
+    .aboutme,
+    .word {
         display: none;
     }
 
@@ -319,13 +320,6 @@ hr {
         font-size: 14px;
     }
 
-    .word {
-        display: none;
-    }
-
-    .terminal-popup {
-        display: none;
-    }
 
 
 
