@@ -319,7 +319,34 @@ hr {
     .explorer a {
         font-size: 14px;
     }
-
+    .terminal-popup-mobile {
+        background: #121212;
+        font-family: 'IMB Plex Mono', monospace;
+        font-weight: 300;
+        font-size: 16px;
+        position: fixed;
+        /* Fixed positioning to keep it at the bottom */
+        bottom: -100%;
+        /* Initially hidden off the screen */
+        left: 0;
+        width: 100%;
+        transition: bottom 0.5s;
+        /* Smooth transition for the slide effect */
+        z-index: 5;
+    }
+    
+    .terminal-popup-mobile p {
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .terminal-popup-mobile h1 {
+        font-size: 18px;
+        background: #292929;
+        margin: 0;
+        padding: 15px;
+    }
 
 
 
