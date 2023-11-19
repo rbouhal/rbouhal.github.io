@@ -103,21 +103,35 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#run").click(function () {
-        // Check if terminal is already shown
-        if ($(".terminal-popup").css('bottom') === '0px') {
-            // Terminal is shown, so hide it
-            $(".terminal-popup").css('bottom', '-100%');
-        } else {
-            // Terminal is hidden, so show it
-            $(".terminal-popup").css('bottom', '0');
-        }
+        // For Desktop
+        toggleTerminal(".terminal-popup");
+
+        // For Mobile
+        toggleTerminal(".terminal-popup-mobile");
     });
-    
-    // Optional: Hide the terminal when user scrolls
+
+    // Hide the terminal when user scrolls - Desktop
     $(window).scroll(function () {
         $(".terminal-popup").css('bottom', '-100%');
     });
+
+    // Hide the terminal when user scrolls - Mobile
+    $(window).scroll(function () {
+        $(".terminal-popup-mobile").css('bottom', '-100%');
+    });
 });
+
+function toggleTerminal(selector) {
+    // Check if terminal is already shown
+    if ($(selector).css('bottom') === '0px') {
+        // Terminal is shown, so hide it
+        $(selector).css('bottom', '-100%');
+    } else {
+        // Terminal is hidden, so show it
+        $(selector).css('bottom', '0');
+    }
+}
+
 
 window.onload = function() {
     var aboutMeHeight = document.querySelector('.aboutme').offsetHeight;
