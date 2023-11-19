@@ -217,7 +217,7 @@ hr {
     color: #98c379;
 }
 
-.comment {
+.comment, .num {
     color: #999c9f;
 }
 
@@ -276,6 +276,14 @@ hr {
         font-size: 16px;
     }
 
+
+    .prj-col,
+    .drawer,
+    .aboutme {
+        display: none;
+    }
+
+
     #name {
         width: 8%;
     }
@@ -290,40 +298,15 @@ hr {
         width: 3%;
     }
 
-    #right,
-    #rb-right,
-    #resume-right,
-    #research-right {
-        width: 5px;
-        height: 5px;
-    }
-
-    #main,
-    #file, #project-folder {
-        height: 10px;
-    }
-
-    .dropdown div, .prj-col p, .dhead {
+    .num{
         font-size: 10px;
     }
-  
-    .prj-col img, #project-down-arrow{
-        width: 10px
+    .aboutme-mobile .java-code{
+        font-size: 14px;
+        position: relative;
+        left: 0;
     }
-    #project-folder{
-        scale: 69%;
-    }
-
-
-    .resume-folder,
-    .research-folder {
-        padding-left: 3px;
-    }
-
-    .resume-level-2,
-    .research-level-2 {
-        padding-left: 10px;
-    }
+   
 
     .explorer a {
         font-size: 14px;

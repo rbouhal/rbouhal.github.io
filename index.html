@@ -124,8 +124,8 @@
         <span class="comment">01</span>     <span class="comment">/***</span>
         <span class="comment">02</span>      <span class="comment">* Public Class to Get to Know Me</span>
         <span class="comment">03</span>      <span class="comment">*</span>
-        <span class="comment">04</span>      <span class="comment">* @author rayanb</span>
-        <span class="comment">05</span>      <span class="comment">* @version 2023</span>
+        <span class="comment">04</span>      <span class="comment">* <span class="annotation">@author</span> rayanb</span>
+        <span class="comment">05</span>      <span class="comment">* <span class="annotation">@version</span> <span class="number">2023</span></span>
         <span class="comment">06</span>      <span class="comment">*</span> 
         <span class="comment">07</span>      <span class="comment">***/</span>        
         <span class="comment">08</span>      <span class="keyword">public class</span> AboutMe {
@@ -214,6 +214,114 @@
         <span class="comment">91</span>  }
         </pre>       
     </div>
+
+    <div class="aboutme-mobile">
+        <pre class="java-code">
+        <span class="num">01</span>  <span class="comment">/***</span>
+        <span class="num">02</span>  <span class="comment">* Public Class to Get to Know Me
+        <span class="num">03</span>  <span class="comment">*</span>
+        <span class="num">04</span>  <span class="comment">* <span class="annotation">@author</span> rayanb</span>
+        <span class="num">05</span>  <span class="comment">* <span class="annotation">@version</span> <span class="number">2023</span></span>
+        <span class="num">06</span>  <span class="comment">*</span> 
+        <span class="num">07</span>  <span class="comment">***/</span>        
+        <span class="num">08</span>  <span class="keyword">public class</span> AboutMe {
+        <span class="num">08</span>    
+        <span class="num">09</span>  <span class="comment">// Personal Info </span>
+        <span class="num">10</span>  <span class="keyword">private static final String</span> 
+        <span class="num">11</span>     NAME = <span class="string">"Rayan Bouhal"</span>;
+        <span class="num">12</span>  <span class="keyword">private static final String</span>
+        <span class="num">13</span>     PROFESSION = <span class="string">"CS Student"</span>;
+        <span class="num">14</span>  <span class="keyword">private static final String</span> 
+        <span class="num">15</span>     LOCATION = <span class="string">"Virginia Tech"</span>;
+        <span class="num">16</span>  <span class="keyword">private static final int</span> 
+        <span class="num">17</span>     CLASS_YEAR = <span class="number">2024</span>; <span class="comment"></span>
+        <span class="num">18</span>  <span class="keyword">private static final String[]</span> 
+        <span class="num">19</span>     SKILLS = {<span class="string">"Problem Solving"</span>, 
+        <span class="num">20</span>               <span class="string">"Creativity"</span>, 
+        <span class="num">21</span>               <span class="string">"Tenacity"</span>};
+        <span class="num">22</span>  <span class="keyword">private static final String[]</span> 
+        <span class="num">23</span>     HOBBIES = {<span class="string">"Coding"</span>, 
+        <span class="num">24</span>                <span class="string">"Cooking"</span>, 
+        <span class="num">25</span>                <span class="string">"Soccer"</span>};
+        <span class="num">26</span>
+        <span class="num">27</span>  <span class="comment">/***</span>
+        <span class="num">28</span>  <span class="comment">*</span>
+        <span class="num">29</span>  <span class="comment">* Print Introduction</span>
+        <span class="num">30</span>  <span class="comment">*</span>      
+        <span class="num">31</span>  <span class="comment">***/</span>
+        <span class="comment">23</span>      <span class="keyword">public void</span> <span class="method">introduction</span>() {
+        <span class="comment">24</span>            System.out.println(<span class="string">"Hello! My name is "</span> + NAME);
+        <span class="comment">25</span>            System.out.println(<span class="string">"I am a "</span> + PROFESSION + <span class="string">" at "</span> + LOCATION);
+        <span class="comment">26</span>      }
+        <span class="comment">27</span>    
+        <span class="comment">28</span>     <span class="comment">/***</span>
+        <span class="comment">29</span>      <span class="comment">*</span>
+        <span class="comment">30</span>      <span class="comment">* Print Class</span>
+        <span class="comment">31</span>      <span class="comment">*</span> 
+        <span class="comment">32</span>      <span class="comment">***/</span>
+        <span class="comment">33</span>      <span class="keyword">public void</span> <span class="method">experience</span>() {
+        <span class="comment">34</span>            System.out.println(<span class="string">"I am graduating in "</span> + CLASS_YEAR);
+        <span class="comment">35</span>      }
+        <span class="comment">36</span>    
+        <span class="comment">37</span>     <span class="comment">/***</span>
+        <span class="comment">38</span>      <span class="comment">*</span>
+        <span class="comment">39</span>      <span class="comment">* Some of my best skills</span>
+        <span class="comment">40</span>      <span class="comment">*</span> 
+        <span class="comment">41</span>      <span class="comment">***/</span>
+        <span class="comment">42</span>      <span class="keyword">public void</span> <span class="method">skills</span>() {
+        <span class="comment">43</span>            StringBuilder builder = <span class="keyword">new</span> StringBuilder();
+        <span class="comment">44</span>            builder.append(<span class="string">"I possess a diverse set of skills including: "</span>);
+        <span class="comment">45</span>            <span class="keyword">for</span> (<span class="keyword">int</span> i <span class="keyword">=</span> <span class="number">0</span>; i <span class="keyword"><</span> SKILLS.length; i<span class="keyword">++</span> ) {
+        <span class="comment">46</span>              
+        <span class="comment">47</span>                <span class="keyword">if</span> (i <span class="keyword">></span> <span class="number">0</span> ){
+        <span class="comment">48</span>                    builder.append(i <span class="keyword">==</span> SKILLS.length <span class="keyword">-</span> <span class="number">1</span> <span class="keyword">?</span> <span class="string">", and "</span> <span class="keyword">:</span> <span class="string">", "</span>);
+        <span class="comment">49</span>                }
+        <span class="comment">50</span>
+        <span class="comment">51</span>                builder.append(SKILLS[i]);
+        <span class="comment">52</span>
+        <span class="comment">53</span>            }
+        <span class="comment">54</span>
+        <span class="comment">55</span>            System.out.println(builder);
+        <span class="comment">56</span>      }
+        <span class="comment">57</span>    
+        <span class="comment">58</span>     <span class="comment">/***</span>
+        <span class="comment">59</span>      <span class="comment">*</span>
+        <span class="comment">60</span>      <span class="comment">* Work hard, play harder</span>
+        <span class="comment">61</span>      <span class="comment">*</span> 
+        <span class="comment">62</span>      <span class="comment">***/</span>
+        <span class="comment">63</span>      <span class="keyword">public void</span> <span class="method">hobbies</span>() {
+        <span class="comment">64</span>            StringBuilder builder = <span class="keyword">new</span> StringBuilder();
+        <span class="comment">65</span>            builder.append(<span class="string">"In my free time, I enjoy: "</span>);
+        <span class="comment">66</span>            <span class="keyword">for</span> (<span class="keyword">int</span> i <span class="keyword">=</span> <span class="number">0</span>; i <span class="keyword"><</span> HOBBIES.length; i<span class="keyword">++</span> ) {
+        <span class="comment">67</span>              
+        <span class="comment">68</span>                <span class="keyword">if</span> (i <span class="keyword">></span> <span class="number">0</span> ){
+        <span class="comment">69</span>                    builder.append(i <span class="keyword">==</span> HOBBIES.length <span class="keyword">-</span> <span class="number">1</span> <span class="keyword">?</span> <span class="string">", and "</span> <span class="keyword">:</span> <span class="string">", "</span>);
+        <span class="comment">70</span>                }
+        <span class="comment">71</span>
+        <span class="comment">72</span>                builder.append(HOBBIES[i]);
+        <span class="comment">73</span>
+        <span class="comment">74</span>            }
+        <span class="comment">75</span>
+        <span class="comment">76</span>            System.out.println(builder);
+        <span class="comment">77</span>      }
+        <span class="comment">78</span>    
+        <span class="comment">79</span>      <span class="comment">/***</span>
+        <span class="comment">80</span>       <span class="comment">*</span>
+        <span class="comment">81</span>       <span class="comment">* Main Method</span>
+        <span class="comment">82</span>       <span class="comment">*</span> 
+        <span class="comment">83</span>       <span class="comment">***/</span>
+        <span class="comment">84</span>       <span class="keyword">public static void</span> <span class="method">main</span>(String[] args) {
+        <span class="comment">85</span>            AboutMe aboutMe = <span class="keyword">new</span> AboutMe();
+        <span class="comment">86</span>            aboutMe.<span class="method">introduction</span>();
+        <span class="comment">87</span>            aboutMe.<span class="method">experience</span>();
+        <span class="comment">88</span>            aboutMe.<span class="method">skills</span>();
+        <span class="comment">89</span>            aboutMe.<span class="method">hobbies</span>();
+        <span class="comment">90</span>      }
+        <span class="comment">91</span>  }
+        </pre>       
+    </div>
+
+
     <div class="terminal-popup">
         <h1>TERMINAL</h1>
     <p>
