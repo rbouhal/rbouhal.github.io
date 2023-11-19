@@ -287,7 +287,8 @@ hr {
     .prj-col,
     .drawer,
     .aboutme,
-    .word {
+    .word, 
+    .terminal-popup {
         display: none;
     }
 
