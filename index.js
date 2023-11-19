@@ -107,11 +107,10 @@ $(document).ready(function () {
 
         if (isMobile) {
             // Mobile-specific effect
-            // For example, toggle visibility or change position
             if ($(".terminal-popup").is(":visible")) {
-                $(".terminal-popup").hide(); // or any other effect you want
+                $(".terminal-popup").hide(); // Hide on mobile
             } else {
-                $(".terminal-popup").show(); // or any other effect you want
+                $(".terminal-popup").show(); // Show on mobile
             }
         } else {
             // Desktop effect
@@ -123,14 +122,12 @@ $(document).ready(function () {
         }
     });
 
-    // Optional: Hide the terminal when user scrolls
+    // Hide the terminal when user scrolls, both on desktop and mobile
     $(window).scroll(function () {
-        if (!window.matchMedia("screen and (max-width: 700px)").matches) {
-            $(".terminal-popup").css('bottom', '-100%');
-        }
-        // You can add an else block here if you want to handle the scroll event differently on mobile
+        $(".terminal-popup").hide(); // This will work for both mobile and desktop
     });
 });
+
 
 window.onload = function() {
     var aboutMeHeight = document.querySelector('.aboutme').offsetHeight;
