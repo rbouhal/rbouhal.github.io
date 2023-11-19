@@ -287,7 +287,7 @@ hr {
     .prj-col,
     .drawer,
     .aboutme,
-    .word,.terminal-popup {
+    .word {
         display: none;
     }
 
@@ -315,11 +315,13 @@ hr {
         left: -75px;
     }
    
-
     .explorer a {
         font-size: 14px;
     }
 
+    #run{
+        width: 5%;
+    }
 
 
 

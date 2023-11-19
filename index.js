@@ -103,19 +103,32 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#run").click(function () {
-        // Check if terminal is already shown
-        if ($(".terminal-popup").css('bottom') === '0px') {
-            // Terminal is shown, so hide it
-            $(".terminal-popup").css('bottom', '-100%');
+        var isMobile = window.matchMedia("screen and (max-width: 700px)").matches;
+
+        if (isMobile) {
+            // Mobile-specific effect
+            // For example, toggle visibility or change position
+            if ($(".terminal-popup").is(":visible")) {
+                $(".terminal-popup").hide(); // or any other effect you want
+            } else {
+                $(".terminal-popup").show(); // or any other effect you want
+            }
         } else {
-            // Terminal is hidden, so show it
-            $(".terminal-popup").css('bottom', '0');
+            // Desktop effect
+            if ($(".terminal-popup").css('bottom') === '0px') {
+                $(".terminal-popup").css('bottom', '-100%');
+            } else {
+                $(".terminal-popup").css('bottom', '0');
+            }
         }
     });
-    
+
     // Optional: Hide the terminal when user scrolls
     $(window).scroll(function () {
-        $(".terminal-popup").css('bottom', '-100%');
+        if (!window.matchMedia("screen and (max-width: 700px)").matches) {
+            $(".terminal-popup").css('bottom', '-100%');
+        }
+        // You can add an else block here if you want to handle the scroll event differently on mobile
     });
 });
 
