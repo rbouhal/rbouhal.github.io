@@ -303,8 +303,7 @@ hr {
     }
     .aboutme-mobile .java-code{
         font-size: 14px;
-        position: relative;
-        left: 0;
+        margin-left: -75px;
     }
    
 
