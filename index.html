@@ -251,10 +251,10 @@
         <span class="num">31</span>  <span class="comment">***/</span>
         <span class="num">32</span>  <span class="keyword">public void</span> <span class="method">introduction</span>() {
         <span class="num">33</span>     System.out.println(
-        <span class="num">34</span>       <span class="string">"Hello! My name is "</span> + <span class="annotation">NAME</span>);
+        <span class="num">34</span>        <span class="string">"Hello! My name is "</span> + <span class="annotation">NAME</span>);
         <span class="num">35</span>     System.out.println(
-        <span class="num">36</span>       <span class="string">"I am a "</span> + <span class="annotation">PROFESSION</span>
-        <span class="num">37</span>       + <span class="string">" at "</span> + <span class="annotation">LOCATION</span>);
+        <span class="num">36</span>        <span class="string">"I am a "</span> + <span class="annotation">PROFESSION</span>
+        <span class="num">37</span>        + <span class="string">" at "</span> + <span class="annotation">LOCATION</span>);
         <span class="num">38</span>  }
         <span class="num">39</span> 
         <span class="num">40</span> 
@@ -264,17 +264,21 @@
         <span class="num">44</span>  <span class="comment">*</span> 
         <span class="num">45</span>  <span class="comment">***/</span>
         <span class="num">46</span>  <span class="keyword">public void</span> <span class="method">experience</span>() {
-        <span class="comment">34</span>            System.out.println(<span class="string">"I am graduating in "</span> + CLASS_YEAR);
-        <span class="comment">35</span>      }
-        <span class="comment">36</span>    
-        <span class="comment">37</span>     <span class="comment">/***</span>
-        <span class="comment">38</span>      <span class="comment">*</span>
-        <span class="comment">39</span>      <span class="comment">* Some of my best skills</span>
-        <span class="comment">40</span>      <span class="comment">*</span> 
-        <span class="comment">41</span>      <span class="comment">***/</span>
-        <span class="comment">42</span>      <span class="keyword">public void</span> <span class="method">skills</span>() {
-        <span class="comment">43</span>            StringBuilder builder = <span class="keyword">new</span> StringBuilder();
-        <span class="comment">44</span>            builder.append(<span class="string">"I possess a diverse set of skills including: "</span>);
+        <span class="num">47</span>     System.out.println(
+        <span class="num">48</span>        <span class="string">"I am graduating in "</span>
+        <span class="num">49</span>        + <span class="annotation">CLASS_YEAR</span>);
+        <span class="num">50</span>  }
+        <span class="num">51</span>    
+        <span class="num">52</span>  <span class="comment">/***</span>
+        <span class="num">53</span>  <span class="comment">*</span>
+        <span class="num">54</span>  <span class="comment">* Some of my best skills</span>
+        <span class="num">55</span>  <span class="comment">*</span> 
+        <span class="num">56</span>  <span class="comment">***/</span>
+        <span class="num">57</span>  <span class="keyword">public void</span> <span class="method">skills</span>() {
+        <span class="num">58</span>     StringBuilder builder = 
+        <span class="num">59</span>        <span class="keyword">new</span> StringBuilder();
+        <span class="num">60</span>     builder.append(
+        <span class="num">61</span>        <span class="string">"I possess a diverse set of skills including: "</span>);
         <span class="comment">45</span>            <span class="keyword">for</span> (<span class="keyword">int</span> i <span class="keyword">=</span> <span class="number">0</span>; i <span class="keyword"><</span> SKILLS.length; i<span class="keyword">++</span> ) {
         <span class="comment">46</span>              
         <span class="comment">47</span>                <span class="keyword">if</span> (i <span class="keyword">></span> <span class="number">0</span> ){
