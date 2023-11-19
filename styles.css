@@ -270,12 +270,19 @@ hr {
     padding: 15px;
 }
 
+.aboutme-mobile{
+    display: none;
+}
+
 
 @media screen and (max-width: 700px) {
     body {
         font-size: 16px;
     }
 
+    .aboutme-mobile{
+        display: block;
+    }
 
     .prj-col,
     .drawer,
