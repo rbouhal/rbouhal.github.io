@@ -278,11 +278,13 @@
         <span class="num">58</span>     StringBuilder builder = 
         <span class="num">59</span>        <span class="keyword">new</span> StringBuilder();
         <span class="num">60</span>     builder.append(
-        <span class="num">61</span>        <span class="string">"I possess a diverse set of skills including: "</span>);
-        <span class="comment">45</span>            <span class="keyword">for</span> (<span class="keyword">int</span> i <span class="keyword">=</span> <span class="number">0</span>; i <span class="keyword"><</span> SKILLS.length; i<span class="keyword">++</span> ) {
+        <span class="num">61</span>        <span class="string">"I possess a diverse set of 
+        <span class="num">62</span>         skills including: "</span>);
+        <span class="num">63</span>     <span class="keyword">int</span> len = <span class="annotation">SKILLS</span>.length;
+        <span class="num">64</span>     <span class="keyword">for</span> (<span class="keyword">int</span> i <span class="keyword">=</span> <span class="number">0</span>; i <span class="keyword"><</span> <span class="annotation">len</span>; i<span class="keyword">++</span> ) {
         <span class="comment">46</span>              
         <span class="comment">47</span>                <span class="keyword">if</span> (i <span class="keyword">></span> <span class="number">0</span> ){
-        <span class="comment">48</span>                    builder.append(i <span class="keyword">==</span> SKILLS.length <span class="keyword">-</span> <span class="number">1</span> <span class="keyword">?</span> <span class="string">", and "</span> <span class="keyword">:</span> <span class="string">", "</span>);
+        <span class="comment">48</span>                    builder.append(i <span class="keyword">==</span> <span class="annotation">len</span> <span class="keyword">-</span> <span class="number">1</span> <span class="keyword">?</span> <span class="string">", and "</span> <span class="keyword">:</span> <span class="string">", "</span>);
         <span class="comment">49</span>                }
         <span class="comment">50</span>
         <span class="comment">51</span>                builder.append(SKILLS[i]);
