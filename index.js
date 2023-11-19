@@ -103,31 +103,21 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#run").click(function () {
-        var isMobile = window.matchMedia("screen and (max-width: 700px)").matches;
-
-        if (isMobile) {
-            // Mobile-specific effect
-            if ($(".terminal-popup").is(":visible")) {
-                $(".terminal-popup").hide(); // Hide on mobile
-            } else {
-                $(".terminal-popup").show(); // Show on mobile
-            }
+        // Check if terminal is already shown
+        if ($(".terminal-popup").css('bottom') === '0px') {
+            // Terminal is shown, so hide it
+            $(".terminal-popup").css('bottom', '-100%');
         } else {
-            // Desktop effect
-            if ($(".terminal-popup").css('bottom') === '0px') {
-                $(".terminal-popup").css('bottom', '-100%');
-            } else {
-                $(".terminal-popup").css('bottom', '0');
-            }
+            // Terminal is hidden, so show it
+            $(".terminal-popup").css('bottom', '0');
         }
     });
-
-    // Hide the terminal when user scrolls, both on desktop and mobile
+    
+    // Optional: Hide the terminal when user scrolls
     $(window).scroll(function () {
-        $(".terminal-popup").hide(); // This will work for both mobile and desktop
+        $(".terminal-popup").css('bottom', '-100%');
     });
 });
-
 
 window.onload = function() {
     var aboutMeHeight = document.querySelector('.aboutme').offsetHeight;
