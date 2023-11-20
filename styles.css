@@ -274,14 +274,13 @@ hr {
     display: none;
 }
 
+.terminal-popup-mobile{
+    display: none;
+}
 
 @media screen and (max-width: 700px) {
     body {
         font-size: 16px;
-    }
-
-    .header{
-        
     }
 
     .aboutme-mobile{
@@ -324,6 +323,7 @@ hr {
         font-size: 14px;
     }
     .terminal-popup-mobile {
+        display: block;
         background: #121212;
         font-family: 'IMB Plex Mono', monospace;
         font-weight: 300;
