@@ -276,13 +276,10 @@ hr {
     padding: 15px;
 }
 
-.aboutme-mobile{
+.aboutme-mobile, .drop-down-mobile, .terminal-popup-mobile{
     display: none;
 }
 
-.terminal-popup-mobile{
-    display: none;
-}
 
 @media screen and (max-width: 700px) {
     body {
@@ -355,6 +352,15 @@ hr {
         padding: 15px;
     }
 
-
+    .drop-down-mobile{
+        background: #333843;
+        height: auto;
+        width: 100vw;
+        display: block;
+    }
+    #run{
+        height: 30px;
+        width: 30px;
+    }
 
 }
