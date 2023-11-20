@@ -14,6 +14,7 @@ body {
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 15;
 }
 
 
@@ -62,6 +63,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding-right: 1rem;
+    z-index: 15;
 }
 
 
@@ -139,7 +141,7 @@ hr {
 }
 
 
-.dhead {
+.dhead , .m-dhead {
     height: 2.5rem;
     background: #333843;
     font-family: 'Nunito Sans', sans-serif;
@@ -147,14 +149,14 @@ hr {
     font-size: 16px;
 }
 
-.dhead #project-folder {
+.dhead #project-folder, .m-dhead #project-folder {
     position: relative;
     top: 0.45rem;
     width: 2rem;
     padding-left: 0.3rem;
 }
 
-.dhead #project-down-arrow {
+.dhead #project-down-arrow, .m-dhead #project-down-arrow {
     width: 0.75rem;
 }
 
@@ -280,7 +282,7 @@ hr {
 
 .aboutme-mobile,
 .drop-down-mobile,
-.terminal-popup-mobile {
+.terminal-popup-mobile, .menu {
     display: none;
 }
 
@@ -380,10 +382,24 @@ hr {
         height: auto;
         width: 100vw;
         display: block;
+        z-index: 15;
     }
 
     #run {
         width: 50px;
     }
+
+    .menu{
+        background: #1f2128;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: -100%;
+        transition: top 0.5s;
+        z-index: 5;
+    }
+    
+    
 
 }

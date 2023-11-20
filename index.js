@@ -152,3 +152,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the elements
+    var dropDownMobile = document.querySelector('.drop-down-mobile');
+    var menu = document.querySelector('.menu');
+
+    // Function to get the computed top value of the menu
+    function getMenuTop() {
+        return window.getComputedStyle(menu).top;
+    }
+
+    // Function to toggle the menu
+    function toggleMenu() {
+        // Calculate the bottom position of the dropDownMobile element
+        var dropDownBottom = dropDownMobile.getBoundingClientRect().bottom + window.scrollY;
+
+        // Convert the current top style of the menu to a number
+        var currentTop = parseFloat(getMenuTop());
+
+        // Since getBoundingClientRect() might return a floating point number,
+        // we use a threshold for comparison
+        var threshold = 5; // pixels
+
+        // Check if the menu is currently visible within the threshold
+        if (Math.abs(currentTop - dropDownBottom) < threshold) {
+            // Slide up
+            menu.style.top = '-100vh';
+        } else {
+            // Slide down
+            menu.style.top = dropDownBottom + 'px';
+        }
+    }
+
+    // Event listener for the click
+    dropDownMobile.addEventListener('click', toggleMenu);
+});
+
+
+
