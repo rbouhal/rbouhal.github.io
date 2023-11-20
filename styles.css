@@ -341,7 +341,9 @@ hr {
         font-size: 14px;
         position: relative;
         left: -75px;
+        z-index: -2;
     }
+
 
     .explorer a {
         font-size: 14px;
@@ -397,8 +399,9 @@ hr {
         position: absolute;
         top: -100%;
         transition: top 0.5s;
-        z-index: 5;
+        z-index: -1;
     }
+
     
     
 
