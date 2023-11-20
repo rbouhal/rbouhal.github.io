@@ -9,10 +9,22 @@ body {
 .header {
     background: #1f2128;
     display: flex;
+    flex-wrap: nowrap; /* Add this line */
+    text-align: center;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    text-align: left;
 }
+
+
+
+.header-text {
+    text-align: center;
+    font-size: 22px;
+    flex: 1; 
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
 
 .header img,
 .himg {
@@ -36,12 +48,6 @@ body {
     height: 1rem;
 }
 
-.header-text {
-    flex-grow: 1;
-    text-align: center;
-    font-family: 'Nunito Sans', sans-serif;
-    letter-spacing: 2px;
-}
 
 .contain {
     display: flex;
@@ -283,6 +289,11 @@ hr {
         font-size: 16px;
     }
 
+    .header-text {
+        font-size: 16px;
+        white-space: nowrap; 
+    }
+    
     .aboutme-mobile{
         display: block;
     }
@@ -300,15 +311,7 @@ hr {
         width: 8%;
     }
 
-    #arr,
-    #bottom {
-        width: 4%;
-    }
-
-    #close {
-        height: 1.5%;
-        width: 3%;
-    }
+ 
 
     .num{
         font-size: 10px;
