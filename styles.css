@@ -341,7 +341,7 @@ hr {
         font-size: 14px;
         position: relative;
         left: -75px;
-        z-index: -2;
+        z-index: -3;
     }
 
 
@@ -363,7 +363,7 @@ hr {
         width: 100%;
         transition: bottom 0.5s;
         /* Smooth transition for the slide effect */
-        z-index: 5;
+        z-index: -2;
     }
 
     .terminal-popup-mobile p {
