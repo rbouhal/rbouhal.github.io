@@ -160,7 +160,7 @@ hr {
     width: 0.75rem;
 }
 
-.dropdown {
+.dropdown, .m-dropdown {
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 1.5px;
     font-size: 16px;
@@ -179,7 +179,7 @@ hr {
     width: 0.7rem;
 }
 
-.dropdown #main {
+.dropdown #main, .m-dropdown #main {
     width: 2rem;
 }
 
@@ -399,7 +399,7 @@ hr {
         position: absolute;
         top: -100%;
         transition: top 0.5s;
-        z-index: -1;
+        z-index: 0;
     }
 
     
