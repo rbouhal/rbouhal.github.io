@@ -9,7 +9,8 @@ body {
 .header {
     background: #1f2128;
     display: flex;
-    flex-wrap: nowrap; /* Add this line */
+    flex-wrap: nowrap;
+    /* Add this line */
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
@@ -20,7 +21,7 @@ body {
 .header-text {
     text-align: center;
     font-size: 22px;
-    flex: 1; 
+    flex: 1;
     font-family: 'Nunito Sans', sans-serif;
     letter-spacing: 2px;
 }
@@ -80,7 +81,7 @@ a {
 }
 
 #run {
-width: 100px;
+    width: 100px;
 }
 
 
@@ -223,7 +224,8 @@ hr {
     color: #98c379;
 }
 
-.comment, .num {
+.comment,
+.num {
     color: #999c9f;
 }
 
@@ -276,7 +278,9 @@ hr {
     padding: 15px;
 }
 
-.aboutme-mobile, .drop-down-mobile, .terminal-popup-mobile{
+.aboutme-mobile,
+.drop-down-mobile,
+.terminal-popup-mobile {
     display: none;
 }
 
@@ -288,17 +292,17 @@ hr {
 
     .header-text {
         font-size: 16px;
-        white-space: nowrap; 
+        white-space: nowrap;
     }
-    
-    .aboutme-mobile{
+
+    .aboutme-mobile {
         display: block;
     }
 
     .prj-col,
     .drawer,
     .aboutme,
-    .word, 
+    .word,
     .terminal-popup {
         display: none;
     }
@@ -308,27 +312,39 @@ hr {
         width: 8%;
     }
 
-    #arr, #bottom{
+    #arr,
+    #bottom {
         width: 8%;
     }
-    #close{
+
+    #close {
         width: 5%;
         height: 8%;
     }
- 
 
-    .num{
+    .header img {
+        margin-left: 2.5px;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding-bottom: 0.75rem;
+
+    }
+
+
+    .num {
         font-size: 10px;
     }
-    .aboutme-mobile .java-code{
+
+    .aboutme-mobile .java-code {
         font-size: 14px;
         position: relative;
         left: -75px;
     }
-   
+
     .explorer a {
         font-size: 14px;
     }
+
     .terminal-popup-mobile {
         display: block;
         background: #121212;
@@ -345,13 +361,13 @@ hr {
         /* Smooth transition for the slide effect */
         z-index: 5;
     }
-    
+
     .terminal-popup-mobile p {
         padding-left: 20px;
         padding-top: 30px;
         padding-bottom: 50px;
     }
-    
+
     .terminal-popup-mobile h1 {
         font-size: 18px;
         background: #292929;
@@ -359,13 +375,14 @@ hr {
         padding: 15px;
     }
 
-    .drop-down-mobile{
+    .drop-down-mobile {
         background: #333843;
         height: auto;
         width: 100vw;
         display: block;
     }
-    #run{
+
+    #run {
         width: 50px;
     }
 
