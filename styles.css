@@ -80,7 +80,7 @@ a {
 }
 
 #run {
-    width: 3rem;
+width: 100px;
 }
 
 
@@ -308,6 +308,13 @@ hr {
         width: 8%;
     }
 
+    #arr, #bottom{
+        width: 8%;
+    }
+    #close{
+        width: 5%;
+        height: 8%;
+    }
  
 
     .num{
@@ -359,8 +366,7 @@ hr {
         display: block;
     }
     #run{
-        height: 30px;
-        width: 30px;
+        width: 50px;
     }
 
 }
