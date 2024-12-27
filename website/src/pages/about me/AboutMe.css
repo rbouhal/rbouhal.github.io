@@ -1,65 +1,44 @@
 .hero-banner {
   display: flex;
   flex-direction: column;
-  /* Stack elements vertically */
-  align-items: flex-end;
-  /* Align badge to bottom of the profile image */
-  justify-content: flex-end;
-  padding: 5vw 0 0;
-  /* Use viewport width for scalable padding */
+  align-items: flex-end; 
+  justify-content: flex-end; 
+  padding: 5vw 0;
   position: relative;
 }
 
 .circuit-image {
   width: 90vw;
-  /* Responsive width */
   aspect-ratio: 1433 / 324;
-  /* Maintain the aspect ratio */
   border-radius: 50px;
-  /* Smooth corners */
   box-shadow: 0 4px 25px var(--primary-color);
-  /* Glow effect */
   z-index: 0;
 }
 
 .profile-pic-section {
   display: flex;
-  /* Enable inline alignment of profile and badge */
-  align-items: flex-end;
-  /* Align badge to bottom of the profile image */
-  justify-content: flex-end;
-  /* Align to the right side */
-  margin-top: calc(-15vw);
-  /* Adjust overlap relative to viewport width */
+  flex-direction: column; /* Stack profile and badge */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin-top: 0; /* Reset margin */
   z-index: 1;
 }
 
 .profile-image {
   width: 20vw;
-  /* Responsive size */
   max-width: 300px;
-  /* Limit to original size */
   height: auto;
-  /* Maintain aspect ratio */
   border-radius: 50%;
-  /* Circular shape */
   border: 4px solid var(--primary-color);
   object-fit: cover;
   box-shadow: 0 0 20px var(--primary-color);
-  /* Subtle glow effect */
 }
 
 .badge {
+ 
   width: 10vw;
-  /* Scaled size relative to viewport */
   max-width: 60px;
-  /* Fixed size for larger screens */
   height: auto;
-  /* Maintain aspect ratio */
-  margin-left: -4vw;
-  /* Slight overlap relative to viewport width */
-  margin-bottom: 1vw;
-  /* Adjust alignment */
   z-index: 2;
   opacity: 1;
   transform: scale(1) rotate(0deg);
@@ -131,41 +110,70 @@
   /* Intensify shadow */
 }
 
-/* Media Queries for Smaller Screens */
+.bio {
+  width: 1000px;
+}
+
+.connect-button {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .profile-pic-section{
+    margin-top: -200px;
+  }
+  .badge{
+    margin: -120px 0 0 250px;
+  }
+}
+
 @media (max-width: 768px) {
-  .profile-pic-section {
-    margin-top: calc(-20vw);
-    /* Increase overlap for smaller screens */
+  .circuit-image{
+    width: 352px;
+    height: 130px;
+  }
+  .badge{
+    margin: -60px 0 0 150px;
   }
 
+  .titles{
+    padding: 0 20px;
+  }
   .profile-image {
-    width: 25vw;
-    /* Scale down profile image */
+    width: 200px;
+    margin-top: -30px;
+  }
+  .social-box {
+    display: none;
   }
 
-  .badge {
-    width: 12vw;
-    /* Scale badge proportionally */
-    margin-left: -5vw;
-    /* Adjust overlap */
+  .connect-button {
+    display: block;
   }
 }
 
 @media (max-width: 480px) {
-  .profile-pic-section {
-    flex-direction: column;
-    /* Stack badge below profile image */
-    align-items: center;
-    margin-top: calc(-25vw);
+
+
+  h1 {
+    font-size: 20px;
   }
 
-  .badge {
-    margin-left: 0;
-    margin-bottom: 10px;
-    /* Place below the profile image */
+  h2 {
+    font-size: 16px;
   }
+
+  .bio {
+    width: 340px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .button-container-3,
+  .button-container-3 button {
+    width: 160px;
+    font-size: 15px;
+  }
+
+
 }
-
-
-
-
