@@ -51,6 +51,13 @@ function AboutMe() {
                         My passion lies in software development, and I aim to improve my problem-solving, software engineering,
                         and system design skills through practical programming experiences.
                     </h3>
+                    <a href="BouhalRayan_Resume2025.pdf"  target="_blank" rel="noopener noreferrer">
+                    <div class="button-container-3">
+                        <span class="mas">Download Resume</span>
+                        <button type="button" name="Hover">Download Resume</button>
+                    </div>
+                    </a>
+
                 </div>
                 <div className="social-box">
                     <a href="https://github.com/rbouhal" target="_blank" rel="noopener noreferrer">

@@ -1,7 +1,8 @@
 :root {
     --primary-color: #00FFA0;
     --background-color: #002400;
-    --secondary-color: #63B181
+    --secondary-color: #63B181;
+    --hover-color: #DDE591
 }
 
 body {
@@ -24,4 +25,99 @@ h2 {
 h3{
     color: white;
     font-size: 1.75rem;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+
+.mas {
+  position: absolute;
+  color: var(--primary-color);
+  text-align: center;
+  width: 101%;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 14px;
+  overflow: hidden;
+  font-weight: 900;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+}
+a {
+  color: var(--primary-color);
+}
+
+.button-container-3 {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  margin-top: 8vh;
+  overflow: hidden;
+  border: 1px solid var(--primary-color);
+  font-weight: 900;
+  transition: 0.5s;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+}
+.button-container-3 button {
+  width: 101%;
+  height: 100%;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  background: var(--primary-color);
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  border: none;
+  color: var(--background-color);
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards;
+}
+.button-container-3 button:hover {
+  -webkit-animation: ani 0.7s steps(70) forwards;
+  animation: ani 0.7s steps(70) forwards;
 }
