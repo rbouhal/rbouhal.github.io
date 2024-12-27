@@ -1,0 +1,152 @@
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: flex-end;
+  /* Align badge to bottom of the profile image */
+  justify-content: flex-end;
+  padding: 5vw 0 0;
+  /* Use viewport width for scalable padding */
+  position: relative;
+}
+
+.circuit-image {
+  width: 90vw;
+  /* Responsive width */
+  aspect-ratio: 1433 / 324;
+  /* Maintain the aspect ratio */
+  border-radius: 50px;
+  /* Smooth corners */
+  box-shadow: 0 4px 25px var(--primary-color);
+  /* Glow effect */
+  z-index: 0;
+}
+
+.profile-pic-section {
+  display: flex;
+  /* Enable inline alignment of profile and badge */
+  align-items: flex-end;
+  /* Align badge to bottom of the profile image */
+  justify-content: flex-end;
+  /* Align to the right side */
+  margin-top: calc(-15vw);
+  /* Adjust overlap relative to viewport width */
+  z-index: 1;
+}
+
+.profile-image {
+  width: 20vw;
+  /* Responsive size */
+  max-width: 300px;
+  /* Limit to original size */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 50%;
+  /* Circular shape */
+  border: 4px solid var(--primary-color);
+  object-fit: cover;
+  box-shadow: 0 0 20px var(--primary-color);
+  /* Subtle glow effect */
+}
+
+.badge {
+  width: 10vw;
+  /* Scaled size relative to viewport */
+  max-width: 60px;
+  /* Fixed size for larger screens */
+  height: auto;
+  /* Maintain aspect ratio */
+  margin-left: -4vw;
+  /* Slight overlap relative to viewport width */
+  margin-bottom: 1vw;
+  /* Adjust alignment */
+  z-index: 2;
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.badge-hidden {
+  opacity: 0;
+  /* Hidden state */
+  transform: scale(0.8) rotate(180deg);
+}
+
+.titles {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between text and social box */
+  align-items: flex-start; /* Align items at the top */
+  padding: 20px;
+  gap: 20px; /* Space between the two sections */
+}
+
+/* Social box container */
+.social-box {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: var(--background-color); /* Dark green background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 
+      -2px -2px 10px var(--primary-color), /* Bottom-right shadow */
+      -2px 2px 10px var(--secondary-color); /* Top-left highlight */
+  width: 100px; /* Box width */
+  margin: 55px;
+}
+
+/* Individual social media icons */
+.social-box img {
+  width: 70px; /* Icon size */
+  height: 70px;
+  border-radius: 50%; /* Make icons circular */
+  background: var(--background-color); /* Match the box */
+  padding: 5px; /* Space inside the icon */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.social-box img:hover {
+  transform: scale(1.1); /* Slightly enlarge icon */
+  box-shadow: 
+      8px 8px 15px var(--secondary-color), 
+      -8px -8px 15px var(--primary-color); /* Intensify shadow */
+}
+
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .profile-pic-section {
+    margin-top: calc(-20vw);
+    /* Increase overlap for smaller screens */
+  }
+
+  .profile-image {
+    width: 25vw;
+    /* Scale down profile image */
+  }
+
+  .badge {
+    width: 12vw;
+    /* Scale badge proportionally */
+    margin-left: -5vw;
+    /* Adjust overlap */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-pic-section {
+    flex-direction: column;
+    /* Stack badge below profile image */
+    align-items: center;
+    margin-top: calc(-25vw);
+  }
+
+  .badge {
+    margin-left: 0;
+    margin-bottom: 10px;
+    /* Place below the profile image */
+  }
+}
